@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="110dp"
+        android:ems="10"
+        android:hint="CIUDAD"
+        android:inputType="text"
+        android:maxLength="200"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/tcedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="107dp"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="CÉDULA"
+        android:inputType="text"
+        android:maxLength="10"
+        android:onClick="tcedula"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="71dp"
+        android:onClick="btnlimpiar"
+        android:text="Limpiar" />
+
+    <EditText
+        android:id="@+id/tnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="110dp"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="500"
+        android:hint="NOMBRES"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnaceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="btnaceptar"
+        android:text="Aceptar" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="109dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="FECHA DE NACIMIENTO"
+        android:textSize="14sp" />
+
+     <EditText
+        android:id="@+id/tcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="164dp"
+        android:ems="10"
+        android:hint="CORREO"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="211dp"
+        android:ems="10"
+        android:hint="TELÉFONO"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="405dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#8393ED"
+        android:text="REGISTRO USUARIO"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginBottom="253dp"
+            android:text="MASCULINO" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginBottom="300dp"
+            android:baselineAligned="true"
+            android:text="FEMENINO" />
+    </RadioGroup>
+</RelativeLayout>
